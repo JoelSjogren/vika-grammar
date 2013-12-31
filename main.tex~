@@ -1,0 +1,205 @@
+\documentclass[a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{gb4e}
+\usepackage{enumitem}
+
+\newcommand{\eline}{\\[\baselineskip]} % empty line
+
+\newenvironment{mytable}[2]
+{
+  \eline
+  \begin{tabular}{#1}
+  \hline #2\\ \hline
+}
+{ \end{tabular} }
+\newcommand{\myheader}[1]{ \hline #1\\ \hline }
+\newenvironment{wlistvisv} % word list, vikamål-svenska
+%{ \begin{\mytable} \myheader{Vikamål & Svenska} }
+{ \begin{mytable}{ l l }{Vikamål & Svenska} }
+{ \end{mytable} }
+\newenvironment{wlistsipl} % word list, singular-plural
+{ \begin{mytable}{ l l }{Singular & Plural} }
+{ \end{mytable} }
+\newenvironment{wlistmnf} % word list, mask-neutr-fem
+{ \begin{mytable}{ l l l }{Maskulinum & Neutrum & Femininum} }
+{ \end{mytable} }
+\newenvironment{wlistvcon} % word list, verb conjugation
+{ \begin{mytable}{ l l l l l l l }
+  {
+%    \multicolumn{3}{c}{Singular} & \multicolumn{3}{c}{Plural}\\
+%    \hline
+    1 & 2 & 3 & 1 & 2 & 3 & Svenska
+  }
+}
+{ \end{mytable} }
+\newenvironment{wlistinfl} % word list, inflection of adjectives
+{ \begin{mytable}{ l l l }{Positiv & Komparativ & Superlativ} }
+{ \end{mytable} }
+\newenvironment{rlist} % rule list
+{ \begin{enumerate}[label=\Alph*] }
+{ \end{enumerate} }
+
+\begin{document}
+
+\title{Vikamål}
+\author{Joel Sjögren}
+\date{2013-12-31}
+\maketitle
+\tableofcontents
+
+%\part
+%\chapter
+%\section
+%\subsection
+
+\part{Substantiv}
+  \chapter{Genus}
+    Vikamålet har tre genus: \emph{maskulinum}, \emph{neutrum} och \emph{femininum}.\\Svenskan däremot klumpar ihop maskulinum och femininum.
+    \section{Bestämd form}
+      I vikamål visas genus med den bestämda artikeln. Den används bara vid betoning (\emph{den} mannen) alltså som i svenskan.
+      \begin{wlistmnf}
+        dånda Karrn & eda Bordä & doda Lampu\\
+        dånda Rackan & eda Govä & doda Männischu\\
+        . & . & doda Nåli
+      \end{wlistmnf}
+    \section{Obestämd form}
+      .
+      \begin{wlistmnf}
+        jenn Karr & jett Bord & je Lampa\\
+        jenn Rackä & jett Gov & je Männisch\\
+        . & . & je Nål
+      \end{wlistmnf}
+    \section{Maskuliner}
+      \begin{rlist}
+        \item Ord som betecknar män.
+        \begin{wlistvisv}
+          jenn Karr & en man\\
+          jenn Tupp & en tupp\\
+        \end{wlistvisv}
+        \item Ord som i plural på svenska slutar \emph{-ar}.
+        \begin{wlistvisv}
+          jenn Dag & en dag\\
+          jenn Stol & en stol\\
+          jenn Måne & en måne\\
+        \end{wlistvisv}
+        \item Ord som beskriver en sak utifrån dess uppgift. Dessa känns igen genom att de slutar på \emph{-er} (motsvarande det svenska \emph{-are}) eller \emph{-or}.
+        \begin{wlistvisv}
+          jenn Dator & en dator (\emph{lat. givare})\\
+          jenn Motor & en motor\\
+          jenn CD-Spiler & en CD-spelare\\
+        \end{wlistvisv}
+        \item Ord som slutar på \emph{-tion}.
+        \begin{wlistvisv}
+          jenn Station & en station\\
+        \end{wlistvisv}
+        \item Ord som slutar på \emph{-at}.
+        \begin{wlistvisv}
+          jenn Tomat & en tomat\\
+          jenn Kamrat & en kamrat\\
+        \end{wlistvisv}
+      \end{rlist}
+    \section{Neutrer}
+      \begin{rlist}
+        \item Ord som liknar svenska ord och i svenskan har den obestämda artikeln \emph{ett}.
+        \begin{wlistvisv}
+          jett Trejd & ett träd\\
+          jett Öjs & ett Hus\\
+          jett Snöre & ett snöre\\
+        \end{wlistvisv}
+      \end{rlist}
+    \section{Femininer}
+      \begin{rlist}
+        \item Ord som slutar på \emph{-a}.
+        \begin{wlistvisv}
+          je Sejda & en sida\\
+          je Tröja & en tröja\\
+          je Höna & en höna\\
+        \end{wlistvisv}
+        \item Ord som slutar på \emph{-ing}. (Notera att både \emph{ng}- och \emph{g}-ljudet uttalas.)
+        \begin{wlistvisv}
+          je Bogsering & en bogsering\\
+          je Inspielning & en inspelning\\
+        \end{wlistvisv}
+      \end{rlist}
+  \chapter{Plural}
+    Vikamålet har samma numerus som svenskan: \emph{singular} och \emph{plural}.\eline
+    I alla genus plural heter den bestämda artikeln \emph{demda}. Den obestämda artikeln flera heter \emph{fler}.\eline
+    Ombildning från singular till plural är i många fall enklare än i svenskan. Istället för att välja bland \emph{-ar} och \emph{-er} använder man ofta bara \emph{-er} (som uttalas lite mer åt \emph{är}-hållet).
+    \begin{wlistsipl}
+      je Bok & fler Böker \\
+      jenn Stol & fler Stoler \\
+    \end{wlistsipl}\eline
+    Som synes ovan liknar omljud, det vill säga byte av vokal, svenskan.\eline
+    Nedan följer några fall där pluralbildningen är svårare.
+    \begin{rlist}
+      \item Ord som i singular redan slutar på \emph{-er} får ytterligare ett \emph{-er}.
+      \begin{wlistsipl}
+        jenn CD-Spiler & fler CD-Spilerer\\
+      \end{wlistsipl}
+      \item Plural av ord som slutar på \emph{-a} bildas genom utbyte mot ändelsen \emph{-ur} (uttalas \emph{urr}).
+      \begin{wlistsipl}
+        je Tröja & fler Tröjur\\
+        je Sejda & fler Sejdur\\
+      \end{wlistsipl}
+      \item Förkortningar böjs med samma svårighet som i svenskan.
+      \begin{wlistsipl}
+        jenn TV & fler TV-apparater
+      \end{wlistsipl}
+      \item Neutrala ord heter samma sak i singular som i plural. Undantaget är \emph{jett trejd, fler trejn}. [huvud?]
+      \begin{wlistsipl}
+        jett Bord & fler Bord\\
+        jett Snöre & fler Snöre\\
+        jett Öjs & fler Öjs\\
+      \end{wlistsipl}
+    \end{rlist}
+%  \chapter{Kasusformer}
+    \chapter{Verb}
+      \section{Presens}
+        .
+        \begin{wlistvcon}
+          itter & itter & itter & ittum & ittir & itta\\
+          a & a & a & am & avir & a\\
+          e & e & e & em & evir & e\\
+        \end{wlistvcon}
+      \section{Imperfekt}
+        .
+        \begin{wlistvcon}
+          itted & itted & itted & ittedum & ittedir & itted\\
+          ad & ad & ad & adum & adir & ad\\
+          va & va & va & vam & vair & va\\
+        \end{wlistvcon}
+      \section{Perfekt}
+        .
+        \begin{wlistvisv}
+          itta & hittat\\
+          aft & haft\\
+          ve & varit\\
+        \end{wlistvisv}
+      \section{Imperativ}
+        Exempel andra person plural (?):
+        \begin{wlistvisv}
+          Kommir jon! & Kom hit /med er/!\\
+        \end{wlistvisv}
+    \chapter{Adjektiv}
+      \section{Komparation}
+        .
+        \begin{wlistinfl}
+          snabb & snabber & snabbest\\
+          rod & roder & rodest\\
+          stur & störrer & störst\\
+          liten & minder & minst\\
+        \end{wlistinfl}
+      \section{Böjning (inflektion)}
+        Adjektiv böjs inte: \emph{dånda snabb biln, demda snabb biler}.
+      \section{Bildning av adverb}
+
+\end{document}
+
+
+
+
+
+
+
+
