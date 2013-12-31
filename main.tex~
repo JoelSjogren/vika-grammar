@@ -114,7 +114,7 @@
         \begin{wlistvisv}
           je Sejda & en sida\\
           je Tröja & en tröja\\
-          je Höna & en höna\\
+          je Öna & en höna\\
         \end{wlistvisv}
         \item Ord som slutar på \emph{-ing}. (Notera att både \emph{ng}- och \emph{g}-ljudet uttalas.)
         \begin{wlistvisv}
@@ -158,16 +158,16 @@
       \section{Presens}
         .
         \begin{wlistvcon}
-          itter & itter & itter & ittum & ittir & itta\\
-          a & a & a & am & avir & a\\
-          e & e & e & em & evir & e\\
+          itter & itter & itter & ittum & ittir & itta & hittar\\
+          a & a & a & am & avir & a & har\\
+          e & e & e & em & evir & e & är\\
         \end{wlistvcon}
       \section{Imperfekt}
         .
         \begin{wlistvcon}
-          itted & itted & itted & ittedum & ittedir & itted\\
-          ad & ad & ad & adum & adir & ad\\
-          va & va & va & vam & vair & va\\
+          itted & itted & itted & ittedum & ittedir & itted & hittade\\
+          ad & ad & ad & adum & adir & ad & hade\\
+          va & va & va & vam & vair & va & var\\
         \end{wlistvcon}
       \section{Perfekt}
         .
